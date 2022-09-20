@@ -37,3 +37,7 @@ jobs:
     - name: Create city JSONs
       run: |
         python main.py
+    - uses: actions/upload-artifact@v3
+      with:
+        name: cities
+        path: output/
